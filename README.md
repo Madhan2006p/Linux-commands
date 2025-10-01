@@ -162,14 +162,6 @@ gcc pwd.c -o pwd
 * Add support for simple pipelines (`|`)
 * Implement background processes (`&`)
 
----
-
-# 🎯 Final Deliverable
-
-By the end, you’ll have:
-✅ A collection of mini Linux utilities (your own “busybox-lite”).
-✅ A solid understanding of system calls & Unix internals.
-✅ A GitHub repo that shows growth in difficulty (great portfolio project).
 
 ---
 
