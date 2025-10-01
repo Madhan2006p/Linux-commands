@@ -1,0 +1,137 @@
+🔥 Awesome — you’re essentially building a **mini-toolkit of Linux utilities**. To do this properly, you need both **a roadmap of increasing difficulty** and **clear system concepts** to cover. Let’s design it step by step 👇
+
+---
+
+# 🛠️ Roadmap to Re-creating Linux Commands
+
+---
+
+## 📌 Phase 1: Foundation (Basics of File I/O & Directories)
+
+**Goal:** Learn how Linux represents files & directories.
+**Commands to re-create:**
+
+1. `echo` → Print text to stdout (`printf`, `write`)
+2. `cat` → Read a file and print its contents (`open`, `read`, `write`)
+3. `ls` → List directory entries (`opendir`, `readdir`)
+4. `pwd` → Print current working directory (`getcwd`)
+
+🔑 **Concepts Learned:**
+
+* File descriptors, system calls
+* Buffering & standard streams (stdin, stdout, stderr)
+* Directory navigation
+
+---
+
+## 📌 Phase 2: File Manipulation
+
+**Goal:** Work with file operations & metadata.
+**Commands to re-create:**
+
+1. `cp` → Copy files (`read` + `write` loop)
+2. `mv` → Move files (`rename`, or copy + delete)
+3. `rm` → Delete files (`unlink`)
+4. `touch` → Create empty file / update timestamp (`open` with `O_CREAT`)
+
+🔑 **Concepts Learned:**
+
+* System calls (`open`, `creat`, `unlink`, `rename`)
+* File modes & permissions
+* Timestamps (`utime`)
+
+---
+
+## 📌 Phase 3: Permissions & Attributes
+
+**Goal:** Explore file metadata, users, groups.
+**Commands to re-create:**
+
+1. `chmod` → Change file permissions (`chmod`)
+2. `chown` → Change ownership (`chown`)
+3. `stat` → Show file metadata (`stat`, `lstat`)
+
+🔑 **Concepts Learned:**
+
+* File permission bits (rwx)
+* UID/GID and ownership
+* File types (regular, dir, symlink)
+
+---
+
+## 📌 Phase 4: Process & System Commands
+
+**Goal:** Understand how Linux manages processes.
+**Commands to re-create:**
+
+1. `ps` → List running processes (parse `/proc/`)
+2. `kill` → Send signals (`kill(pid, SIGKILL)`)
+3. `sleep` → Pause (`sleep`, `nanosleep`)
+4. `whoami` → Get current user (`getuid`, `getpwuid`)
+
+🔑 **Concepts Learned:**
+
+* `/proc` filesystem
+* Process IDs & signals
+* User identity
+
+---
+
+## 📌 Phase 5: Text Processing Utilities
+
+**Goal:** Work with string parsing & searching.
+**Commands to re-create:**
+
+1. `grep` → Search patterns in files (basic regex)
+2. `wc` → Count lines, words, characters
+3. `head` / `tail` → Show first/last N lines
+4. `sort` → Sort lines in a file
+
+🔑 **Concepts Learned:**
+
+* String processing
+* Regular expressions
+* Memory efficiency with streams
+
+---
+
+## 📌 Phase 6: Advanced Utilities
+
+**Goal:** Combine system concepts into powerful tools.
+**Commands to re-create:**
+
+1. `find` → Recursively search files (`nftw`, recursion)
+2. `df` → Show disk usage (`statvfs`)
+3. `du` → Disk usage per file (`stat`, recursion)
+4. `tar` → Archive files (optional, for advanced challenge)
+
+🔑 **Concepts Learned:**
+
+* Recursion in filesystem traversal
+* Filesystem statistics
+* Compression & archiving concepts
+
+---
+
+## 📌 Phase 7: Shell-like Features (Bonus)
+
+**Goal:** Move towards a *mini-shell environment*.
+**Ideas:**
+
+* Build a very basic **shell** (`read`, `fork`, `exec`, `wait`)
+* Add support for simple pipelines (`|`)
+* Implement background processes (`&`)
+
+---
+
+# 🎯 Final Deliverable
+
+By the end, you’ll have:
+✅ A collection of mini Linux utilities (your own “busybox-lite”).
+✅ A solid understanding of system calls & Unix internals.
+✅ A GitHub repo that shows growth in difficulty (great portfolio project).
+
+---
+
+⚡ Question for you:
+Do you want me to **prioritize the roadmap in order of easiest-to-hardest**, or group it in **real-world categories (like file handling, process control, text utilities)** for your GitHub project layout?
