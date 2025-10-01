@@ -1,4 +1,4 @@
-# Linux-Commands (C Implementations)
+# Linux-Commands (C Implementations) (Windows / Linux)
 
 This project is a **re-creation of basic Linux commands using C programming**.  
 The aim is to understand how fundamental Unix/Linux utilities work internally by writing simplified versions of them from scratch.
