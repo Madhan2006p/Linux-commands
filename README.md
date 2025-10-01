@@ -35,13 +35,12 @@ The aim is to understand how fundamental Unix/Linux utilities work internally by
 Each command is implemented as a separate C file.  
 Compile using `gcc`:
 
-```bash
 # Example: compile pwd
 gcc pwd.c -o pwd
 
-🔥 Awesome — you’re essentially building a **mini-toolkit of Linux utilities**. To do this properly, you need both **a roadmap of increasing difficulty** and **clear system concepts** to cover. Let’s design it step by step 👇
+# Run the command
+./pwd
 
----
 
 # 🛠️ Roadmap to Re-creating Linux Commands
 
@@ -174,9 +173,4 @@ By the end, you’ll have:
 
 ---
 
-⚡ Question for you:
-Do you want me to **prioritize the roadmap in order of easiest-to-hardest**, or group it in **real-world categories (like file handling, process control, text utilities)** for your GitHub project layout?
 
-
-# Run the command
-./pwd
