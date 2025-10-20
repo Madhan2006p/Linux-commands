@@ -1,0 +1,3 @@
+opendir("path") => It open the dir and return a pointer 
+
+readdir( pointer from opendir() ) => it read from the dir 
