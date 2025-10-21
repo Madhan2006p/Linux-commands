@@ -1,3 +1,10 @@
 opendir("path") => It open the dir and return a pointer 
 
 readdir( pointer from opendir() ) => it read from the dir 
+
+remove(const char * FileName) => unlink from memory
+
+rename(const char  * FileName) => To Move from one memory location to other memory location
+
+
+access(File fp , F_OK) => Return that file is accessiable or not  
